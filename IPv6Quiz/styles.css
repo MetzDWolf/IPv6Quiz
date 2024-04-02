@@ -1,0 +1,140 @@
+/* Allgemeine Styles */
+body {
+    font-family: 'Consolas', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header-Container */
+.header-container {
+    background-color: #336699;
+    color: white;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header i {
+    margin: 0 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Spielername */
+.player-name {
+    font-size: 16px;
+    background-color: #336699;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    display: flex;
+    align-items: center; /* Zentriert die Elemente vertikal */
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Spielername Text */
+.player-name span {
+    margin-left: auto;
+}
+
+/* Spielername Eingabe */
+.player-container {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.player-container p {
+    margin-bottom: 10px;
+}
+
+.player-container input[type="text"] {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto 10px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Textschatten hinzugefügt */
+}
+
+/* Buttons */
+.player-container button, .action-button, #restartButton {
+    font-family: 'Consolas', sans-serif;
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    background-color: #336699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.player-container button:hover, .action-button:hover, #restartButton:hover {
+    background-color: #005fa3;
+}
+
+/* Hauptcontainer */
+.main-container {
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fragen und Antworten */
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    margin-bottom: 15px;
+}
+
+/* Quiz Ergebnis */
+#result {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#result h2 {
+    margin-bottom: 10px;
+}
+
+.correct {
+    color: #008000;
+}
+
+.incorrect {
+    color: #ff0000;
+}
+
+.unanswered {
+    color: #000000;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPv6 Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header-container">
+    <div class="header">
+        <i class="fas fa-pen"></i>
+        <h1>IPv6 Quiz</h1>
+        <i class="fas fa-pen"></i>
+    </div>
+</div>
+
+<div id="playerNameDisplay" class="player-name" style="display: none;"></div>
+<div id="scoreDisplay" class="score-count" style="display: none;"></div>
+
+
+<div class="main-container">
+    <div id="quiz" style="display: none;">
+        <div id="questionContainer" class="question-container"></div>
+        <button id="backButton" onclick="previousQuestion()" class="action-button"><i class="fas fa-arrow-left"></i> Zurück</button>
+        <button onclick="nextQuestion()" class="action-button">Weiter <i class="fas fa-arrow-right"></i></button>
+        <button id="restartButton" onclick="restartQuiz()" class="action-button"><i class="fas fa-redo-alt"></i> Neustarten</button>
+    </div>
+
+    <div id="player" class="player-container">
+        <p><i class="fas fa-user"></i> Geben Sie bitte Ihren Spielernamen ein:</p>
+        <label for="playerName"></label><input type="text" id="playerName" maxlength="30" placeholder="Spielername">
+        <button onclick="startQuiz()" class="action-button">Quiz starten</button>
+    </div>
+
+    <div id="result" style="display: none;" class="result-container"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
